@@ -3,6 +3,7 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { Post } from './interfaces/post.interface';
 import { firstValueFrom } from 'rxjs';
 import { CreatePostDto } from './dto/create-post.dto';
+import { UpdatePostDto } from './dto/update-post.dto';
 
 @Injectable()
 export class PostsService {
@@ -43,7 +44,7 @@ export class PostsService {
     }
   }
 
-  async update(id: number, dto: CreatePostDto): Promise<Post> {
+  async update(id: number, dto: UpdatePostDto): Promise<Post> {
     try {
       const response = await firstValueFrom(
         this.httpService.put<Post>(`${this.apiUrl}/${id}`, dto),
