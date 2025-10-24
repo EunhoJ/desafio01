@@ -40,10 +40,10 @@ const PostForm = () => {
     setBody("");
 
     if (postToEdit) {
-      dispatch({ type: "UPDATE_POST", payload: post });
+      dispatch({ type: "UPDATE_POST_LOCAL", payload: post });
       setMessage("Post atualizado com sucesso!");
     } else {
-      dispatch({ type: "CREATE_POST", payload: post });
+      dispatch({ type: "ADD_POST_LOCAL", payload: post });
       setMessage("Post criado com sucesso!");
     }
   };
