@@ -7,7 +7,7 @@ import { UpdatePostDto } from './dto/update-post.dto';
 
 @Injectable()
 export class PostsService {
-  private readonly apiUrl = 'https://my-json-server.typicode.com/EunhoJ/db/posts';
+  private readonly apiUrl = 'https://jsonplaceholder.typicode.com/posts';
 
   constructor(private readonly httpService: HttpService) {}
 
