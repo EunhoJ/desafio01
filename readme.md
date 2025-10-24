@@ -73,11 +73,11 @@ npm run start:dev
 
 O servidor será iniciado em:
 
-http://localhost:3000
+http://localhost:3000/api/posts
 
 📘 Documentação Swagger:
 
-http://localhost:3000/api
+http://localhost:3000/api/docs
 
 ---
 
